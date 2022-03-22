@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e7b6b4e47d6467da54e48d74cdba107 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6e7b6b4e47d6467da54e48d74cdba107" ></div>
+        
+</body>
+<script>    
+    
+            var map_6e7b6b4e47d6467da54e48d74cdba107 = L.map(
+                "map_6e7b6b4e47d6467da54e48d74cdba107",
+                {
+                    center: [43.77322372549019, 11.253013333333332],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+
+            
+
+        
+    
+            var tile_layer_293e58457ee94019bc88186a52c9c71e = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+            var layer_control_f6ff9a6750f94f31ad48972ec4aabbd0 = {
+                base_layers : {
+                    "https://server.arcgisonline.com/arcgis/rest/services/world_topo_map/mapserver/tile/{z}/{y}/{x}" : tile_layer_293e58457ee94019bc88186a52c9c71e,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_f6ff9a6750f94f31ad48972ec4aabbd0.base_layers,
+                layer_control_f6ff9a6750f94f31ad48972ec4aabbd0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+            var circle_marker_1f6aa17a28b442a7ba31d73caebc7919 = L.circleMarker(
+                [43.7821, 11.24392],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_93511add99454af18548b7a4385fd6e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cb94bcf89a0402fb85b38803483ea54 = $(`<div id="html_4cb94bcf89a0402fb85b38803483ea54" style="width: 100.0%; height: 100.0%;">name: <br>Fortezza/City Centre Modern Apt 2+2 hostname: <br> Benedetta And Lorenzo Commercial Property : <br> 1 Price: <br>70.0 census tract id: <br>480170061380.0</div>`)[0];
+            popup_93511add99454af18548b7a4385fd6e9.setContent(html_4cb94bcf89a0402fb85b38803483ea54);
+        
+
+        circle_marker_1f6aa17a28b442a7ba31d73caebc7919.bindPopup(popup_93511add99454af18548b7a4385fd6e9)
+        ;
+
+        
+    
+    
+            circle_marker_1f6aa17a28b442a7ba31d73caebc7919.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2a40e6412fa41c8bbfe5af3d2153c6a = L.circleMarker(
+                [43.78202, 11.24399],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_0daf920ae6144453a6217e5030c77b61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_361696f2bc4a4873babe84158261f624 = $(`<div id="html_361696f2bc4a4873babe84158261f624" style="width: 100.0%; height: 100.0%;">name: <br>Fortezza/City Centre Modern Apt 2+1 hostname: <br> Benedetta And Lorenzo Commercial Property : <br> 1 Price: <br>70.0 census tract id: <br>480170061366.0</div>`)[0];
+            popup_0daf920ae6144453a6217e5030c77b61.setContent(html_361696f2bc4a4873babe84158261f624);
+        
+
+        circle_marker_f2a40e6412fa41c8bbfe5af3d2153c6a.bindPopup(popup_0daf920ae6144453a6217e5030c77b61)
+        ;
+
+        
+    
+    
+            circle_marker_f2a40e6412fa41c8bbfe5af3d2153c6a.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31b4dc77722a4c24b6a3934a8319338c = L.circleMarker(
+                [43.78202, 11.24399],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_83f469b29b3b4e6bb6d3f9d978c2f3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb23c31bb2f04188b38472c08afea63e = $(`<div id="html_eb23c31bb2f04188b38472c08afea63e" style="width: 100.0%; height: 100.0%;">name: <br>Fortezza/City Centre Modern Apt 4+2 hostname: <br> Benedetta And Lorenzo Commercial Property : <br> 1 Price: <br>135.0 census tract id: <br>480170061366.0</div>`)[0];
+            popup_83f469b29b3b4e6bb6d3f9d978c2f3b8.setContent(html_eb23c31bb2f04188b38472c08afea63e);
+        
+
+        circle_marker_31b4dc77722a4c24b6a3934a8319338c.bindPopup(popup_83f469b29b3b4e6bb6d3f9d978c2f3b8)
+        ;
+
+        
+    
+    
+            circle_marker_31b4dc77722a4c24b6a3934a8319338c.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_739b642a7fc449f688f30a223c40f784 = L.circleMarker(
+                [43.78202, 11.24399],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_f45ee1c052e34ff8a9ced1a33cb28d3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b6b7397a255471da5f93a9a95787147 = $(`<div id="html_1b6b7397a255471da5f93a9a95787147" style="width: 100.0%; height: 100.0%;">name: <br>Fortezza/City Centre Modern Apt 4+2 hostname: <br> Benedetta And Lorenzo Commercial Property : <br> 1 Price: <br>120.0 census tract id: <br>480170061366.0</div>`)[0];
+            popup_f45ee1c052e34ff8a9ced1a33cb28d3e.setContent(html_1b6b7397a255471da5f93a9a95787147);
+        
+
+        circle_marker_739b642a7fc449f688f30a223c40f784.bindPopup(popup_f45ee1c052e34ff8a9ced1a33cb28d3e)
+        ;
+
+        
+    
+    
+            circle_marker_739b642a7fc449f688f30a223c40f784.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc7497e3b9c64158b61e33fa8e424e3e = L.circleMarker(
+                [43.77017, 11.25754],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_41dc4ba2e9e54c7bbde45898dcda862d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c352376a52843cfa166c172fd22bc6a = $(`<div id="html_8c352376a52843cfa166c172fd22bc6a" style="width: 100.0%; height: 100.0%;">name: <br>N4U Guest House Florence hostname: <br> N4U Guest House Commercial Property : <br> 0 Price: <br>139.0 census tract id: <br>480170060700.0</div>`)[0];
+            popup_41dc4ba2e9e54c7bbde45898dcda862d.setContent(html_8c352376a52843cfa166c172fd22bc6a);
+        
+
+        circle_marker_fc7497e3b9c64158b61e33fa8e424e3e.bindPopup(popup_41dc4ba2e9e54c7bbde45898dcda862d)
+        ;
+
+        
+    
+    
+            circle_marker_fc7497e3b9c64158b61e33fa8e424e3e.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_71eaba7bb8eb4852b38f57db8276ffa6 = L.circleMarker(
+                [43.77709, 11.25216],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_0f23904b5ca74be5969233b1534279eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eef5e20a849e4219a2c6a12c9b0afef8 = $(`<div id="html_eef5e20a849e4219a2c6a12c9b0afef8" style="width: 100.0%; height: 100.0%;">name: <br>A Residenza Martin  Classic room hostname: <br> Officina 360 Commercial Property : <br> 1 Price: <br>57.0 census tract id: <br>480170061121.0</div>`)[0];
+            popup_0f23904b5ca74be5969233b1534279eb.setContent(html_eef5e20a849e4219a2c6a12c9b0afef8);
+        
+
+        circle_marker_71eaba7bb8eb4852b38f57db8276ffa6.bindPopup(popup_0f23904b5ca74be5969233b1534279eb)
+        ;
+
+        
+    
+    
+            circle_marker_71eaba7bb8eb4852b38f57db8276ffa6.bindTooltip(
+                `<div>
+                     yearly revenue: 423.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd217ff6de9648229a1cfadb76dd3794 = L.circleMarker(
+                [43.76832, 11.24348],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_33deaa1b7d2e4b4da741ca266fd1b3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63ca070e721a48a983419648db82b590 = $(`<div id="html_63ca070e721a48a983419648db82b590" style="width: 100.0%; height: 100.0%;">name: <br>Charming Gem - Oltrarno City centre hostname: <br> Cesare Commercial Property : <br> 0 Price: <br>89.0 census tract id: <br>480170060510.0</div>`)[0];
+            popup_33deaa1b7d2e4b4da741ca266fd1b3c1.setContent(html_63ca070e721a48a983419648db82b590);
+        
+
+        circle_marker_fd217ff6de9648229a1cfadb76dd3794.bindPopup(popup_33deaa1b7d2e4b4da741ca266fd1b3c1)
+        ;
+
+        
+    
+    
+            circle_marker_fd217ff6de9648229a1cfadb76dd3794.bindTooltip(
+                `<div>
+                     yearly revenue: 330.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d51c4291a2184364ab840553acae8c69 = L.circleMarker(
+                [43.76268, 11.24149],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_96337852ed734a328a4a95a00c21b874 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68696b70ea614bc4b4b8fc41656f0305 = $(`<div id="html_68696b70ea614bc4b4b8fc41656f0305" style="width: 100.0%; height: 100.0%;">name: <br>your room in florence hostname: <br> Fabio Commercial Property : <br> 1 Price: <br>60.0 census tract id: <br>480170060409.0</div>`)[0];
+            popup_96337852ed734a328a4a95a00c21b874.setContent(html_68696b70ea614bc4b4b8fc41656f0305);
+        
+
+        circle_marker_d51c4291a2184364ab840553acae8c69.bindPopup(popup_96337852ed734a328a4a95a00c21b874)
+        ;
+
+        
+    
+    
+            circle_marker_d51c4291a2184364ab840553acae8c69.bindTooltip(
+                `<div>
+                     yearly revenue: 4457.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0edd5a93dab8411a856e524d1f9d05d2 = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_0a2eef4317c84903afa768621118c274 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5db5b55c2a5d452e86b2fb0bcdf470b7 = $(`<div id="html_5db5b55c2a5d452e86b2fb0bcdf470b7" style="width: 100.0%; height: 100.0%;">name: <br>Central Double Shared Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>65.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_0a2eef4317c84903afa768621118c274.setContent(html_5db5b55c2a5d452e86b2fb0bcdf470b7);
+        
+
+        circle_marker_0edd5a93dab8411a856e524d1f9d05d2.bindPopup(popup_0a2eef4317c84903afa768621118c274)
+        ;
+
+        
+    
+    
+            circle_marker_0edd5a93dab8411a856e524d1f9d05d2.bindTooltip(
+                `<div>
+                     yearly revenue: 482.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed5270f9009b4f46b4c43650263279bb = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_56967e9a557f4dddba44d07ad9b6a413 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e85df7567eea41ceb73e71ed9e4f6f01 = $(`<div id="html_e85df7567eea41ceb73e71ed9e4f6f01" style="width: 100.0%; height: 100.0%;">name: <br>Florence Central Double Private Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>72.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_56967e9a557f4dddba44d07ad9b6a413.setContent(html_e85df7567eea41ceb73e71ed9e4f6f01);
+        
+
+        circle_marker_ed5270f9009b4f46b4c43650263279bb.bindPopup(popup_56967e9a557f4dddba44d07ad9b6a413)
+        ;
+
+        
+    
+    
+            circle_marker_ed5270f9009b4f46b4c43650263279bb.bindTooltip(
+                `<div>
+                     yearly revenue: 267.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffacee86bd6d4d158de35cfb3222eb68 = L.circleMarker(
+                [43.76742, 11.24378],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_02951d32f8534c879b6db878b2690d04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_971b9238093142b487eb8bb23e132690 = $(`<div id="html_971b9238093142b487eb8bb23e132690" style="width: 100.0%; height: 100.0%;">name: <br>Apartment Santa Monaca hostname: <br> Matilde Commercial Property : <br> 1 Price: <br>75.0 census tract id: <br>480170060510.0</div>`)[0];
+            popup_02951d32f8534c879b6db878b2690d04.setContent(html_971b9238093142b487eb8bb23e132690);
+        
+
+        circle_marker_ffacee86bd6d4d158de35cfb3222eb68.bindPopup(popup_02951d32f8534c879b6db878b2690d04)
+        ;
+
+        
+    
+    
+            circle_marker_ffacee86bd6d4d158de35cfb3222eb68.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b10e7e04f308473788306c954b275284 = L.circleMarker(
+                [43.76418, 11.24618],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_ae6e58c70d664430af7ee22b101bfe6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29f62efcf3ed44ee83999c4e19bf33b4 = $(`<div id="html_29f62efcf3ed44ee83999c4e19bf33b4" style="width: 100.0%; height: 100.0%;">name: <br>Stylish Terrace on Boboli Gardens hostname: <br> Rocco Commercial Property : <br> 0 Price: <br>99.0 census tract id: <br>480170060362.0</div>`)[0];
+            popup_ae6e58c70d664430af7ee22b101bfe6b.setContent(html_29f62efcf3ed44ee83999c4e19bf33b4);
+        
+
+        circle_marker_b10e7e04f308473788306c954b275284.bindPopup(popup_ae6e58c70d664430af7ee22b101bfe6b)
+        ;
+
+        
+    
+    
+            circle_marker_b10e7e04f308473788306c954b275284.bindTooltip(
+                `<div>
+                     yearly revenue: 8825.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_baf66d78101a43019d9b43569104c1fe = L.circleMarker(
+                [43.7728, 11.23746],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_bd4e445d820249e694abc2d5881d118f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_464b8895d29e4b858510d900ca08382a = $(`<div id="html_464b8895d29e4b858510d900ca08382a" style="width: 100.0%; height: 100.0%;">name: <br>MATTEO Apart. Florence Centre hostname: <br> Tarcisio Commercial Property : <br> 1 Price: <br>70.0 census tract id: <br>480170060862.0</div>`)[0];
+            popup_bd4e445d820249e694abc2d5881d118f.setContent(html_464b8895d29e4b858510d900ca08382a);
+        
+
+        circle_marker_baf66d78101a43019d9b43569104c1fe.bindPopup(popup_bd4e445d820249e694abc2d5881d118f)
+        ;
+
+        
+    
+    
+            circle_marker_baf66d78101a43019d9b43569104c1fe.bindTooltip(
+                `<div>
+                     yearly revenue: 1560.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef670646c78f4ec299605a23b4ea82c0 = L.circleMarker(
+                [43.77699, 11.25216],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_56b4901fb86c436fb9f9783be9906d7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79db4ccd929a44919fbdcd08a31b2a85 = $(`<div id="html_79db4ccd929a44919fbdcd08a31b2a85" style="width: 100.0%; height: 100.0%;">name: <br>A Residenza Martin:  Superior room hostname: <br> Officina 360 Commercial Property : <br> 1 Price: <br>57.0 census tract id: <br>480170061090.0</div>`)[0];
+            popup_56b4901fb86c436fb9f9783be9906d7e.setContent(html_79db4ccd929a44919fbdcd08a31b2a85);
+        
+
+        circle_marker_ef670646c78f4ec299605a23b4ea82c0.bindPopup(popup_56b4901fb86c436fb9f9783be9906d7e)
+        ;
+
+        
+    
+    
+            circle_marker_ef670646c78f4ec299605a23b4ea82c0.bindTooltip(
+                `<div>
+                     yearly revenue: 1270.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7202ebd4b2054b4f86d0d523d6ed2d03 = L.circleMarker(
+                [43.77704, 11.25217],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_0091062469cb4cc285dd9b81303e3c25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31117857191e429dbffb2d7c56c9aa9d = $(`<div id="html_31117857191e429dbffb2d7c56c9aa9d" style="width: 100.0%; height: 100.0%;">name: <br>A Residenza Martin:  Single room hostname: <br> Officina 360 Commercial Property : <br> 1 Price: <br>43.0 census tract id: <br>480170061090.0</div>`)[0];
+            popup_0091062469cb4cc285dd9b81303e3c25.setContent(html_31117857191e429dbffb2d7c56c9aa9d);
+        
+
+        circle_marker_7202ebd4b2054b4f86d0d523d6ed2d03.bindPopup(popup_0091062469cb4cc285dd9b81303e3c25)
+        ;
+
+        
+    
+    
+            circle_marker_7202ebd4b2054b4f86d0d523d6ed2d03.bindTooltip(
+                `<div>
+                     yearly revenue: 2555.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a0a32a046994ce48d39530e74bcaae3 = L.circleMarker(
+                [43.777, 11.25216],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_4a684e27263149b8b93e763f96926ad4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd001f0d4fe4204b2eaa31a7b49aa80 = $(`<div id="html_ecd001f0d4fe4204b2eaa31a7b49aa80" style="width: 100.0%; height: 100.0%;">name: <br>A Residenza Martin:  Deluxe room hostname: <br> Officina 360 Commercial Property : <br> 1 Price: <br>59.0 census tract id: <br>480170061090.0</div>`)[0];
+            popup_4a684e27263149b8b93e763f96926ad4.setContent(html_ecd001f0d4fe4204b2eaa31a7b49aa80);
+        
+
+        circle_marker_9a0a32a046994ce48d39530e74bcaae3.bindPopup(popup_4a684e27263149b8b93e763f96926ad4)
+        ;
+
+        
+    
+    
+            circle_marker_9a0a32a046994ce48d39530e74bcaae3.bindTooltip(
+                `<div>
+                     yearly revenue: 2629.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_58f84573f0b34720be382b76dc7fa21f = L.circleMarker(
+                [43.77386, 11.25028],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_aec707c5308d4ec8b1fa1cb6396654f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00c89ac4d26e45c28a87fa90641aacff = $(`<div id="html_00c89ac4d26e45c28a87fa90641aacff" style="width: 100.0%; height: 100.0%;">name: <br>Leonardo House hostname: <br> Darko Commercial Property : <br> 1 Price: <br>46.0 census tract id: <br>480170060943.0</div>`)[0];
+            popup_aec707c5308d4ec8b1fa1cb6396654f3.setContent(html_00c89ac4d26e45c28a87fa90641aacff);
+        
+
+        circle_marker_58f84573f0b34720be382b76dc7fa21f.bindPopup(popup_aec707c5308d4ec8b1fa1cb6396654f3)
+        ;
+
+        
+    
+    
+            circle_marker_58f84573f0b34720be382b76dc7fa21f.bindTooltip(
+                `<div>
+                     yearly revenue: 1025.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a4bd7c49ced4fa99032e643b033001f = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_49722ef21a1340949c122a4ebbf6ea18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37194db3f79048af82a26d399eed7e16 = $(`<div id="html_37194db3f79048af82a26d399eed7e16" style="width: 100.0%; height: 100.0%;">name: <br>Central Single Shared Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>46.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_49722ef21a1340949c122a4ebbf6ea18.setContent(html_37194db3f79048af82a26d399eed7e16);
+        
+
+        circle_marker_7a4bd7c49ced4fa99032e643b033001f.bindPopup(popup_49722ef21a1340949c122a4ebbf6ea18)
+        ;
+
+        
+    
+    
+            circle_marker_7a4bd7c49ced4fa99032e643b033001f.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a25c632cae54c358b4b51ae63382505 = L.circleMarker(
+                [43.77164, 11.23819],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_bf4b6e2673744e5497a7b251a2d0a9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_735cb0591f7e4b628d1b6a64a92f1ef1 = $(`<div id="html_735cb0591f7e4b628d1b6a64a92f1ef1" style="width: 100.0%; height: 100.0%;">name: <br>LETIZIA FLORENCE CENTER Apartm. hostname: <br> Tarcisio Commercial Property : <br> 1 Price: <br>80.0 census tract id: <br>480170060847.0</div>`)[0];
+            popup_bf4b6e2673744e5497a7b251a2d0a9e2.setContent(html_735cb0591f7e4b628d1b6a64a92f1ef1);
+        
+
+        circle_marker_5a25c632cae54c358b4b51ae63382505.bindPopup(popup_bf4b6e2673744e5497a7b251a2d0a9e2)
+        ;
+
+        
+    
+    
+            circle_marker_5a25c632cae54c358b4b51ae63382505.bindTooltip(
+                `<div>
+                     yearly revenue: 297.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_afe5cc32a18c44f2a757750020b68b00 = L.circleMarker(
+                [43.77236, 11.24787],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_ab631aef4409426785b6031a3b5f2e15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b2977bb9ce44873ad8709dbfe515dae = $(`<div id="html_3b2977bb9ce44873ad8709dbfe515dae" style="width: 100.0%; height: 100.0%;">name: <br>love Florence?love Florentin house hostname: <br> Elly Commercial Property : <br> 1 Price: <br>111.0 census tract id: <br>480170060842.0</div>`)[0];
+            popup_ab631aef4409426785b6031a3b5f2e15.setContent(html_3b2977bb9ce44873ad8709dbfe515dae);
+        
+
+        circle_marker_afe5cc32a18c44f2a757750020b68b00.bindPopup(popup_ab631aef4409426785b6031a3b5f2e15)
+        ;
+
+        
+    
+    
+            circle_marker_afe5cc32a18c44f2a757750020b68b00.bindTooltip(
+                `<div>
+                     yearly revenue: 1236.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dfe06fd6a93f45379a637ba4d7a5b0ad = L.circleMarker(
+                [43.78244, 11.26419],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_2043d33c7127415088bb8b6fbf67a1e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bcea9a840b14f4ea8cd5badccfcf92e = $(`<div id="html_0bcea9a840b14f4ea8cd5badccfcf92e" style="width: 100.0%; height: 100.0%;">name: <br>Camera Verde B&B Leonardo da Vinci hostname: <br> Carla Commercial Property : <br> 1 Price: <br>48.0 census tract id: <br>480170061415.0</div>`)[0];
+            popup_2043d33c7127415088bb8b6fbf67a1e6.setContent(html_0bcea9a840b14f4ea8cd5badccfcf92e);
+        
+
+        circle_marker_dfe06fd6a93f45379a637ba4d7a5b0ad.bindPopup(popup_2043d33c7127415088bb8b6fbf67a1e6)
+        ;
+
+        
+    
+    
+            circle_marker_dfe06fd6a93f45379a637ba4d7a5b0ad.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_407b0133aeeb40dab873d9d49801e73c = L.circleMarker(
+                [43.77713, 11.26182],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_8e490733dfe74f61962dbacf86090a77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9ec283593ab4e6ab9cb757fac728bfa = $(`<div id="html_d9ec283593ab4e6ab9cb757fac728bfa" style="width: 100.0%; height: 100.0%;">name: <br>Terrazzino Apartment hostname: <br> Francesco Commercial Property : <br> 1 Price: <br>90.0 census tract id: <br>480170061261.0</div>`)[0];
+            popup_8e490733dfe74f61962dbacf86090a77.setContent(html_d9ec283593ab4e6ab9cb757fac728bfa);
+        
+
+        circle_marker_407b0133aeeb40dab873d9d49801e73c.bindPopup(popup_8e490733dfe74f61962dbacf86090a77)
+        ;
+
+        
+    
+    
+            circle_marker_407b0133aeeb40dab873d9d49801e73c.bindTooltip(
+                `<div>
+                     yearly revenue: 2340.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7520cf7b59b446b4b11a82e0c4098f03 = L.circleMarker(
+                [43.76728, 11.25066],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_18630d3083ae4ac589e9a5a0c455b5e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1f68d7edbb542d5a21cd83993e8d4f5 = $(`<div id="html_f1f68d7edbb542d5a21cd83993e8d4f5" style="width: 100.0%; height: 100.0%;">name: <br>Toscanella Apartment hostname: <br> Francesco Commercial Property : <br> 1 Price: <br>168.0 census tract id: <br>480170060482.0</div>`)[0];
+            popup_18630d3083ae4ac589e9a5a0c455b5e4.setContent(html_f1f68d7edbb542d5a21cd83993e8d4f5);
+        
+
+        circle_marker_7520cf7b59b446b4b11a82e0c4098f03.bindPopup(popup_18630d3083ae4ac589e9a5a0c455b5e4)
+        ;
+
+        
+    
+    
+            circle_marker_7520cf7b59b446b4b11a82e0c4098f03.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60bed8a7a83e4fb3b5c60506003785d7 = L.circleMarker(
+                [43.77652, 11.25588],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_d9564cc2ea6d454e9dafaf1e47ac84d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_718311947446490597ddc6ee89c62e67 = $(`<div id="html_718311947446490597ddc6ee89c62e67" style="width: 100.0%; height: 100.0%;">name: <br>Bright flat,Terrace central Firenze hostname: <br> Elly Commercial Property : <br> 1 Price: <br>90.0 census tract id: <br>480170061094.0</div>`)[0];
+            popup_d9564cc2ea6d454e9dafaf1e47ac84d1.setContent(html_718311947446490597ddc6ee89c62e67);
+        
+
+        circle_marker_60bed8a7a83e4fb3b5c60506003785d7.bindPopup(popup_d9564cc2ea6d454e9dafaf1e47ac84d1)
+        ;
+
+        
+    
+    
+            circle_marker_60bed8a7a83e4fb3b5c60506003785d7.bindTooltip(
+                `<div>
+                     yearly revenue: 2674.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26e3bf1f699843a691edc4e57d82a4d0 = L.circleMarker(
+                [43.77263, 11.26316],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_006114797fc34605a73c3a807af3f1b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1719098df59245de80243801808b4e6a = $(`<div id="html_1719098df59245de80243801808b4e6a" style="width: 100.0%; height: 100.0%;">name: <br>Home Sweet Home away from home 753 Square Feet hostname: <br> Paolo Commercial Property : <br> 0 Price: <br>88.0 census tract id: <br>480170060919.0</div>`)[0];
+            popup_006114797fc34605a73c3a807af3f1b5.setContent(html_1719098df59245de80243801808b4e6a);
+        
+
+        circle_marker_26e3bf1f699843a691edc4e57d82a4d0.bindPopup(popup_006114797fc34605a73c3a807af3f1b5)
+        ;
+
+        
+    
+    
+            circle_marker_26e3bf1f699843a691edc4e57d82a4d0.bindTooltip(
+                `<div>
+                     yearly revenue: 653.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0070c3ad2ca6461fad116b302f50ff6d = L.circleMarker(
+                [43.78209, 11.26469],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_feafc291939d492ba1565bbc1304139f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aa08a7e7e3c45dabbe4a3ba7e20ce0b = $(`<div id="html_2aa08a7e7e3c45dabbe4a3ba7e20ce0b" style="width: 100.0%; height: 100.0%;">name: <br>B&B Leonardo da Vinci Double Room hostname: <br> Carla Commercial Property : <br> 1 Price: <br>42.0 census tract id: <br>480170061415.0</div>`)[0];
+            popup_feafc291939d492ba1565bbc1304139f.setContent(html_2aa08a7e7e3c45dabbe4a3ba7e20ce0b);
+        
+
+        circle_marker_0070c3ad2ca6461fad116b302f50ff6d.bindPopup(popup_feafc291939d492ba1565bbc1304139f)
+        ;
+
+        
+    
+    
+            circle_marker_0070c3ad2ca6461fad116b302f50ff6d.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf9b8105c40a4879978b567d6f6062c9 = L.circleMarker(
+                [43.77089, 11.25966],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_7eda70730eb04acb8178402548f0fd07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_243fc7997df04a8cbbb39ec954d9bfe4 = $(`<div id="html_243fc7997df04a8cbbb39ec954d9bfe4" style="width: 100.0%; height: 100.0%;">name: <br>Loft style historical Central hostname: <br> Elisabetta And Claudia Commercial Property : <br> 1 Price: <br>60.0 census tract id: <br>480170060754.0</div>`)[0];
+            popup_7eda70730eb04acb8178402548f0fd07.setContent(html_243fc7997df04a8cbbb39ec954d9bfe4);
+        
+
+        circle_marker_cf9b8105c40a4879978b567d6f6062c9.bindPopup(popup_7eda70730eb04acb8178402548f0fd07)
+        ;
+
+        
+    
+    
+            circle_marker_cf9b8105c40a4879978b567d6f6062c9.bindTooltip(
+                `<div>
+                     yearly revenue: 668.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e5f23e51f0044648200da574ae9da3f = L.circleMarker(
+                [43.78262, 11.26856],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_21ddf7d9570143f7961ecda6ecbeb22f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ded06b6252d46f798b76571cec0f1e3 = $(`<div id="html_0ded06b6252d46f798b76571cec0f1e3" style="width: 100.0%; height: 100.0%;">name: <br>ARTISTI bright and comfortable apartment hostname: <br> Mauro Commercial Property : <br> 1 Price: <br>70.0 census tract id: <br>480170061425.0</div>`)[0];
+            popup_21ddf7d9570143f7961ecda6ecbeb22f.setContent(html_0ded06b6252d46f798b76571cec0f1e3);
+        
+
+        circle_marker_6e5f23e51f0044648200da574ae9da3f.bindPopup(popup_21ddf7d9570143f7961ecda6ecbeb22f)
+        ;
+
+        
+    
+    
+            circle_marker_6e5f23e51f0044648200da574ae9da3f.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5f84b0c76b104768ae6ac4bb57a41d6d = L.circleMarker(
+                [43.77149, 11.2594],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_0d3f28201f654706938ffcaf81fc9273 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dd8b41d21384400a6cfea0f549db92e = $(`<div id="html_7dd8b41d21384400a6cfea0f549db92e" style="width: 100.0%; height: 100.0%;">name: <br>Le Tre Stanze Bedrooms,Junior Suite hostname: <br> Steiner Commercial Property : <br> 1 Price: <br>120.0 census tract id: <br>480170060754.0</div>`)[0];
+            popup_0d3f28201f654706938ffcaf81fc9273.setContent(html_7dd8b41d21384400a6cfea0f549db92e);
+        
+
+        circle_marker_5f84b0c76b104768ae6ac4bb57a41d6d.bindPopup(popup_0d3f28201f654706938ffcaf81fc9273)
+        ;
+
+        
+    
+    
+            circle_marker_5f84b0c76b104768ae6ac4bb57a41d6d.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e2993c7b2c754e47a11b363cc064150d = L.circleMarker(
+                [43.77055, 11.26723],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_627f2ec8025e4bd5aea63384266b5dda = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d6a1aedc5044427882aae368f10e430 = $(`<div id="html_6d6a1aedc5044427882aae368f10e430" style="width: 100.0%; height: 100.0%;">name: <br>AGNOLO gorgeous and colorful flat hostname: <br> Mauro Commercial Property : <br> 1 Price: <br>107.0 census tract id: <br>480170060724.0</div>`)[0];
+            popup_627f2ec8025e4bd5aea63384266b5dda.setContent(html_6d6a1aedc5044427882aae368f10e430);
+        
+
+        circle_marker_e2993c7b2c754e47a11b363cc064150d.bindPopup(popup_627f2ec8025e4bd5aea63384266b5dda)
+        ;
+
+        
+    
+    
+            circle_marker_e2993c7b2c754e47a11b363cc064150d.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_844410f1713c48c8be8e56c70609c59a = L.circleMarker(
+                [43.76787, 11.26324],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_cca6be2429f5457db65bab713dd2e57c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68eab1205f2e4ad4a673b3a38b7db679 = $(`<div id="html_68eab1205f2e4ad4a673b3a38b7db679" style="width: 100.0%; height: 100.0%;">name: <br>Santa Croce wonderful and cozy apartment hostname: <br> Mauro Commercial Property : <br> 1 Price: <br>95.0 census tract id: <br>480170060559.0</div>`)[0];
+            popup_cca6be2429f5457db65bab713dd2e57c.setContent(html_68eab1205f2e4ad4a673b3a38b7db679);
+        
+
+        circle_marker_844410f1713c48c8be8e56c70609c59a.bindPopup(popup_cca6be2429f5457db65bab713dd2e57c)
+        ;
+
+        
+    
+    
+            circle_marker_844410f1713c48c8be8e56c70609c59a.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8222df4d5a92437ea3897c3461605ab4 = L.circleMarker(
+                [43.77591, 11.25846],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_47eb2193408e478c96043e2d4d2c174e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd77b1262dc24f2c9b8b9c1b36ecebb1 = $(`<div id="html_dd77b1262dc24f2c9b8b9c1b36ecebb1" style="width: 100.0%; height: 100.0%;">name: <br>apartment in the center of Florence hostname: <br> Stefano Commercial Property : <br> 0 Price: <br>75.0 census tract id: <br>480170061045.0</div>`)[0];
+            popup_47eb2193408e478c96043e2d4d2c174e.setContent(html_dd77b1262dc24f2c9b8b9c1b36ecebb1);
+        
+
+        circle_marker_8222df4d5a92437ea3897c3461605ab4.bindPopup(popup_47eb2193408e478c96043e2d4d2c174e)
+        ;
+
+        
+    
+    
+            circle_marker_8222df4d5a92437ea3897c3461605ab4.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41c2e0f458f447bab5d43fea270ef279 = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_97554368f541414b9539bd7ad012822c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dac762dd4df4331b803264655c23ef5 = $(`<div id="html_1dac762dd4df4331b803264655c23ef5" style="width: 100.0%; height: 100.0%;">name: <br>Central Triple Private Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>90.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_97554368f541414b9539bd7ad012822c.setContent(html_1dac762dd4df4331b803264655c23ef5);
+        
+
+        circle_marker_41c2e0f458f447bab5d43fea270ef279.bindPopup(popup_97554368f541414b9539bd7ad012822c)
+        ;
+
+        
+    
+    
+            circle_marker_41c2e0f458f447bab5d43fea270ef279.bindTooltip(
+                `<div>
+                     yearly revenue: 334.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45e6169aaeb34b1dae91eb5c3abf71c4 = L.circleMarker(
+                [43.77597, 11.25035],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_56738fc023044f3a9aa2baba9abd57a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_582e9d130e1740e6bc6077d32dd9d20f = $(`<div id="html_582e9d130e1740e6bc6077d32dd9d20f" style="width: 100.0%; height: 100.0%;">name: <br>Lovely Flat in Old Town Florence hostname: <br> Franco Commercial Property : <br> 0 Price: <br>80.0 census tract id: <br>480170061073.0</div>`)[0];
+            popup_56738fc023044f3a9aa2baba9abd57a4.setContent(html_582e9d130e1740e6bc6077d32dd9d20f);
+        
+
+        circle_marker_45e6169aaeb34b1dae91eb5c3abf71c4.bindPopup(popup_56738fc023044f3a9aa2baba9abd57a4)
+        ;
+
+        
+    
+    
+            circle_marker_45e6169aaeb34b1dae91eb5c3abf71c4.bindTooltip(
+                `<div>
+                     yearly revenue: 2971.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a046c77298434761b6e2afab1ae3c231 = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_88eeb9d5b02343af8dc00b4f8663b9ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ef7a63df4a74f59acc381b450d2c170 = $(`<div id="html_8ef7a63df4a74f59acc381b450d2c170" style="width: 100.0%; height: 100.0%;">name: <br>Central Double Shared Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>57.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_88eeb9d5b02343af8dc00b4f8663b9ef.setContent(html_8ef7a63df4a74f59acc381b450d2c170);
+        
+
+        circle_marker_a046c77298434761b6e2afab1ae3c231.bindPopup(popup_88eeb9d5b02343af8dc00b4f8663b9ef)
+        ;
+
+        
+    
+    
+            circle_marker_a046c77298434761b6e2afab1ae3c231.bindTooltip(
+                `<div>
+                     yearly revenue: 211.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33da6ceceb4b492aa5e19b57d7c9ab8d = L.circleMarker(
+                [43.77525, 11.25258],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_a95950888b8f4522baba9fa31a34062b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a23a2bdde4247dc931de53a7c2749bb = $(`<div id="html_6a23a2bdde4247dc931de53a7c2749bb" style="width: 100.0%; height: 100.0%;">name: <br>Florence Central Double Private Bathroom hostname: <br> Lorenzo Commercial Property : <br> 1 Price: <br>72.0 census tract id: <br>480170061025.0</div>`)[0];
+            popup_a95950888b8f4522baba9fa31a34062b.setContent(html_6a23a2bdde4247dc931de53a7c2749bb);
+        
+
+        circle_marker_33da6ceceb4b492aa5e19b57d7c9ab8d.bindPopup(popup_a95950888b8f4522baba9fa31a34062b)
+        ;
+
+        
+    
+    
+            circle_marker_33da6ceceb4b492aa5e19b57d7c9ab8d.bindTooltip(
+                `<div>
+                     yearly revenue: 802.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1144df898f114dbfa6260d2df1db657f = L.circleMarker(
+                [43.76971, 11.2518],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_d4dd2e69f4b5433b9f6f67f74cfd60ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86eb1869020d44c2a12e969ae5dd5773 = $(`<div id="html_86eb1869020d44c2a12e969ae5dd5773" style="width: 100.0%; height: 100.0%;">name: <br>Luxury Apartment near Duomo hostname: <br> Ati Commercial Property : <br> 1 Price: <br>68.0 census tract id: <br>480170060623.0</div>`)[0];
+            popup_d4dd2e69f4b5433b9f6f67f74cfd60ec.setContent(html_86eb1869020d44c2a12e969ae5dd5773);
+        
+
+        circle_marker_1144df898f114dbfa6260d2df1db657f.bindPopup(popup_d4dd2e69f4b5433b9f6f67f74cfd60ec)
+        ;
+
+        
+    
+    
+            circle_marker_1144df898f114dbfa6260d2df1db657f.bindTooltip(
+                `<div>
+                     yearly revenue: 4041.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ada28c0857ef470283f0c0234a9ac580 = L.circleMarker(
+                [43.76988, 11.23978],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_4e590bfcd01146a197bdf5f71ffa8258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caa511db3c524e5882020dddc14068e2 = $(`<div id="html_caa511db3c524e5882020dddc14068e2" style="width: 100.0%; height: 100.0%;">name: <br>Your apartment in the Heart of City hostname: <br> Dante Commercial Property : <br> 1 Price: <br>72.0 census tract id: <br>480170060563.0</div>`)[0];
+            popup_4e590bfcd01146a197bdf5f71ffa8258.setContent(html_caa511db3c524e5882020dddc14068e2);
+        
+
+        circle_marker_ada28c0857ef470283f0c0234a9ac580.bindPopup(popup_4e590bfcd01146a197bdf5f71ffa8258)
+        ;
+
+        
+    
+    
+            circle_marker_ada28c0857ef470283f0c0234a9ac580.bindTooltip(
+                `<div>
+                     yearly revenue: 534.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11286f1c0ee94faca0ba8b15e1b38df2 = L.circleMarker(
+                [43.77243, 11.24519],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_700e36ee522a4ba3ab89d93d2fca3324 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00700841849749b0aff257b6e965f8a4 = $(`<div id="html_00700841849749b0aff257b6e965f8a4" style="width: 100.0%; height: 100.0%;">name: <br>Large Studio in Ognissanti Palace hostname: <br> Gian Commercial Property : <br> 0 Price: <br>38.0 census tract id: <br>480170060855.0</div>`)[0];
+            popup_700e36ee522a4ba3ab89d93d2fca3324.setContent(html_00700841849749b0aff257b6e965f8a4);
+        
+
+        circle_marker_11286f1c0ee94faca0ba8b15e1b38df2.bindPopup(popup_700e36ee522a4ba3ab89d93d2fca3324)
+        ;
+
+        
+    
+    
+            circle_marker_11286f1c0ee94faca0ba8b15e1b38df2.bindTooltip(
+                `<div>
+                     yearly revenue: 6633.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54c847771ed84a65a860cf3a9fecf2c8 = L.circleMarker(
+                [43.74384, 11.21331],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_4414618bc1ac4c74976dc4239a9f828b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3684a5fc81c140479a0e55a25fce6d4b = $(`<div id="html_3684a5fc81c140479a0e55a25fce6d4b" style="width: 100.0%; height: 100.0%;">name: <br>B&B Borgo Ponte all'Asse hostname: <br> Paola Commercial Property : <br> 1 Price: <br>100.0 census tract id: <br>480170060340.0</div>`)[0];
+            popup_4414618bc1ac4c74976dc4239a9f828b.setContent(html_3684a5fc81c140479a0e55a25fce6d4b);
+        
+
+        circle_marker_54c847771ed84a65a860cf3a9fecf2c8.bindPopup(popup_4414618bc1ac4c74976dc4239a9f828b)
+        ;
+
+        
+    
+    
+            circle_marker_54c847771ed84a65a860cf3a9fecf2c8.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b72483eee3a84549a5252f676a5c55a6 = L.circleMarker(
+                [43.77272, 11.25914],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_106d37d7dafe4034829b413aa5e9a89c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3650a38d712049c8a6967deb4b4e18ae = $(`<div id="html_3650a38d712049c8a6967deb4b4e18ae" style="width: 100.0%; height: 100.0%;">name: <br>Duomo Flat Amazing view in Florence hostname: <br> Massimiliano Commercial Property : <br> 0 Price: <br>130.0 census tract id: <br>480170060287.0</div>`)[0];
+            popup_106d37d7dafe4034829b413aa5e9a89c.setContent(html_3650a38d712049c8a6967deb4b4e18ae);
+        
+
+        circle_marker_b72483eee3a84549a5252f676a5c55a6.bindPopup(popup_106d37d7dafe4034829b413aa5e9a89c)
+        ;
+
+        
+    
+    
+            circle_marker_b72483eee3a84549a5252f676a5c55a6.bindTooltip(
+                `<div>
+                     yearly revenue: 28488.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_299c49cf88264a858d18279947de6a86 = L.circleMarker(
+                [43.77556, 11.26009],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_c469fb7481b244bf8abea7566c4a18e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4874f06bfb50417e8f7b721bddc3bc5e = $(`<div id="html_4874f06bfb50417e8f7b721bddc3bc5e" style="width: 100.0%; height: 100.0%;">name: <br>Alfani 2b VIEW OF DUOMO hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>201.0 census tract id: <br>480170061079.0</div>`)[0];
+            popup_c469fb7481b244bf8abea7566c4a18e2.setContent(html_4874f06bfb50417e8f7b721bddc3bc5e);
+        
+
+        circle_marker_299c49cf88264a858d18279947de6a86.bindPopup(popup_c469fb7481b244bf8abea7566c4a18e2)
+        ;
+
+        
+    
+    
+            circle_marker_299c49cf88264a858d18279947de6a86.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68782c1ba3da48dbacab8ce2026e4e1a = L.circleMarker(
+                [43.7736, 11.25881],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_6c861f797e47421aad1a6f24da780b33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05e2a9e21a994fccabf77503a0683643 = $(`<div id="html_05e2a9e21a994fccabf77503a0683643" style="width: 100.0%; height: 100.0%;">name: <br>MAGDA: - close to the DUOMO-SPECIAL APRIL-MAY hostname: <br> Magda Commercial Property : <br> 1 Price: <br>140.0 census tract id: <br>480170061011.0</div>`)[0];
+            popup_6c861f797e47421aad1a6f24da780b33.setContent(html_05e2a9e21a994fccabf77503a0683643);
+        
+
+        circle_marker_68782c1ba3da48dbacab8ce2026e4e1a.bindPopup(popup_6c861f797e47421aad1a6f24da780b33)
+        ;
+
+        
+    
+    
+            circle_marker_68782c1ba3da48dbacab8ce2026e4e1a.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f7b514bad93649909e941ba9cf18edd4 = L.circleMarker(
+                [43.76157, 11.27741],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_1ec46614dcda456b93d1d79f25543df2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_891f9ce0d98545bfb197e230ab9f6740 = $(`<div id="html_891f9ce0d98545bfb197e230ab9f6740" style="width: 100.0%; height: 100.0%;">name: <br>Welcome at Corte Verde in Florence hostname: <br> Lucia Commercial Property : <br> 0 Price: <br>75.0 census tract id: <br>480170060237.0</div>`)[0];
+            popup_1ec46614dcda456b93d1d79f25543df2.setContent(html_891f9ce0d98545bfb197e230ab9f6740);
+        
+
+        circle_marker_f7b514bad93649909e941ba9cf18edd4.bindPopup(popup_1ec46614dcda456b93d1d79f25543df2)
+        ;
+
+        
+    
+    
+            circle_marker_f7b514bad93649909e941ba9cf18edd4.bindTooltip(
+                `<div>
+                     yearly revenue: 278.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9095893ffb0041d791298e2ed7b71663 = L.circleMarker(
+                [43.76944, 11.26331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_19cc72f49c08468b94075808e1e26afa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd197624c88a4016ae0dc1116a247a85 = $(`<div id="html_dd197624c88a4016ae0dc1116a247a85" style="width: 100.0%; height: 100.0%;">name: <br>Pinzochere 2DX Studio hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>102.0 census tract id: <br>480170060630.0</div>`)[0];
+            popup_19cc72f49c08468b94075808e1e26afa.setContent(html_dd197624c88a4016ae0dc1116a247a85);
+        
+
+        circle_marker_9095893ffb0041d791298e2ed7b71663.bindPopup(popup_19cc72f49c08468b94075808e1e26afa)
+        ;
+
+        
+    
+    
+            circle_marker_9095893ffb0041d791298e2ed7b71663.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a6f8dc529314d7986a9fc06b939e55b = L.circleMarker(
+                [43.76944, 11.26331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_2e5fa6f0446a4f4380f3ade4ff9b8fea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e81d08832bd34335a770c4a236a352ec = $(`<div id="html_e81d08832bd34335a770c4a236a352ec" style="width: 100.0%; height: 100.0%;">name: <br>Pinzochere 2SX by Santa Croce hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>143.0 census tract id: <br>480170060630.0</div>`)[0];
+            popup_2e5fa6f0446a4f4380f3ade4ff9b8fea.setContent(html_e81d08832bd34335a770c4a236a352ec);
+        
+
+        circle_marker_8a6f8dc529314d7986a9fc06b939e55b.bindPopup(popup_2e5fa6f0446a4f4380f3ade4ff9b8fea)
+        ;
+
+        
+    
+    
+            circle_marker_8a6f8dc529314d7986a9fc06b939e55b.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e919991e7c944c99322f3f7efa342eb = L.circleMarker(
+                [43.76944, 11.26331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_4b15bca4c3ed4f5db936b42ac61e4e21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc26bc3ae66247719f0400dea2ed54bd = $(`<div id="html_cc26bc3ae66247719f0400dea2ed54bd" style="width: 100.0%; height: 100.0%;">name: <br>Pinzochere Mansarda at SANTA CROCE hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>122.0 census tract id: <br>480170060630.0</div>`)[0];
+            popup_4b15bca4c3ed4f5db936b42ac61e4e21.setContent(html_cc26bc3ae66247719f0400dea2ed54bd);
+        
+
+        circle_marker_4e919991e7c944c99322f3f7efa342eb.bindPopup(popup_4b15bca4c3ed4f5db936b42ac61e4e21)
+        ;
+
+        
+    
+    
+            circle_marker_4e919991e7c944c99322f3f7efa342eb.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_421bc6a77597417ab96dc7acccdb7738 = L.circleMarker(
+                [43.77175, 11.2364],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_9718fbaea34542ad82fbef7af4251024 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e53c60045c154c91b4c5ec54bff37810 = $(`<div id="html_e53c60045c154c91b4c5ec54bff37810" style="width: 100.0%; height: 100.0%;">name: <br>FILIPPO Apartm. FLORENCE CENTER hostname: <br> Tarcisio Commercial Property : <br> 1 Price: <br>70.0 census tract id: <br>480170060847.0</div>`)[0];
+            popup_9718fbaea34542ad82fbef7af4251024.setContent(html_e53c60045c154c91b4c5ec54bff37810);
+        
+
+        circle_marker_421bc6a77597417ab96dc7acccdb7738.bindPopup(popup_9718fbaea34542ad82fbef7af4251024)
+        ;
+
+        
+    
+    
+            circle_marker_421bc6a77597417ab96dc7acccdb7738.bindTooltip(
+                `<div>
+                     yearly revenue: 260.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_932d33ec206d4711a34da0e448347d8d = L.circleMarker(
+                [43.77931, 11.25805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_60b83c3b6bda4967acab0a4516591905 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6812e26e96174015a72f4888bdd19f64 = $(`<div id="html_6812e26e96174015a72f4888bdd19f64" style="width: 100.0%; height: 100.0%;">name: <br>Regal Apartment in 16th Century Florentine Palazzo hostname: <br> Allegra Commercial Property : <br> 1 Price: <br>124.0 census tract id: <br>480170061160.0</div>`)[0];
+            popup_60b83c3b6bda4967acab0a4516591905.setContent(html_6812e26e96174015a72f4888bdd19f64);
+        
+
+        circle_marker_932d33ec206d4711a34da0e448347d8d.bindPopup(popup_60b83c3b6bda4967acab0a4516591905)
+        ;
+
+        
+    
+    
+            circle_marker_932d33ec206d4711a34da0e448347d8d.bindTooltip(
+                `<div>
+                     yearly revenue: 2763.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d0060b7b5d346fda806f4838b5f5fb3 = L.circleMarker(
+                [43.77556, 11.26009],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_ddc1eb705a524fbb940f5c03df784cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e7da1d8b5604210971fa766ee446609 = $(`<div id="html_0e7da1d8b5604210971fa766ee446609" style="width: 100.0%; height: 100.0%;">name: <br>Alfani Suite by GALLERIA ACCADEMIA hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>153.0 census tract id: <br>480170061079.0</div>`)[0];
+            popup_ddc1eb705a524fbb940f5c03df784cc2.setContent(html_0e7da1d8b5604210971fa766ee446609);
+        
+
+        circle_marker_5d0060b7b5d346fda806f4838b5f5fb3.bindPopup(popup_ddc1eb705a524fbb940f5c03df784cc2)
+        ;
+
+        
+    
+    
+            circle_marker_5d0060b7b5d346fda806f4838b5f5fb3.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26814aa30d5e4ea29ef873f7825157a7 = L.circleMarker(
+                [43.77556, 11.26009],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(map_6e7b6b4e47d6467da54e48d74cdba107);
+        
+    
+        var popup_395379184d6a41fc90d81d5cdf4c2d63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8d0b22a9678412cb83dc11fd9766dc6 = $(`<div id="html_a8d0b22a9678412cb83dc11fd9766dc6" style="width: 100.0%; height: 100.0%;">name: <br>Alfani Terrace 2b near the Duomo hostname: <br> Apartments Florence Commercial Property : <br> 1 Price: <br>202.0 census tract id: <br>480170061079.0</div>`)[0];
+            popup_395379184d6a41fc90d81d5cdf4c2d63.setContent(html_a8d0b22a9678412cb83dc11fd9766dc6);
+        
+
+        circle_marker_26814aa30d5e4ea29ef873f7825157a7.bindPopup(popup_395379184d6a41fc90d81d5cdf4c2d63)
+        ;
+
+        
+    
+    
+            circle_marker_26814aa30d5e4ea29ef873f7825157a7.bindTooltip(
+                `<div>
+                     yearly revenue: 0.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
